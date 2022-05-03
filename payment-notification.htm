@@ -23,6 +23,7 @@
   </style>
 <![endif]-->
       <style type="text/css">
+
     body, p, div {
       font-family: verdana,geneva,sans-serif;
       font-size: 14px;
@@ -121,6 +122,13 @@
         margin-top: 0px;
         margin-bottom: 0px;
       }
+      .tg  {border-collapse:collapse;border-color:#C44D58;border-spacing:0;}
+            .tg td{background-color:#F9CDAD;border-color:#C44D58;border-style:solid;border-width:1px;color:#002b36;
+              font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg th{background-color:#FE4365;border-color:#C44D58;border-style:solid;border-width:1px;color:#fdf6e3;
+              font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg .tg-0tde{font-family:"Comic Sans MS", cursive, sans-serif !important;text-align:center;vertical-align:top}
+            .tg .tg-eiot{font-family:"Comic Sans MS", cursive, sans-serif !important;font-weight:bold;text-align:center;vertical-align:top}
     }
   </style>
       <!--user entered Head Start--><!--End Head user entered-->
@@ -169,65 +177,44 @@
     <tbody>
       <tr>
         <td style="padding:18px 4px 18px 10px; line-height: 28px; text-align:inherit;" height="100%" valign="top" bgcolor="" role="module-content"><div><div style="font-family: inherit; text-align: left"><span style="line-height: 1.38; margin-left: 0px; margin-top: 0pt; margin-bottom: 0pt; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; vertical-align: baseline; white-space: pre-wrap; font-family: verdana, geneva, sans-serif; font-size: 14px; color: #7c7474"><h2> A new payment for Glo3D</h2>
-          <table border="1" style="vertical-align: middle; text-align: center;">
-              <th> information </th>
-              <tr style="text-align: center;">
-                <td style="display: flex;">
-                  user ID 
-                </td>
-                <td >
-                  {{user_id}}
-                </td>
+            <table class="tg">
+            <thead>
+              <tr>
+                <th class="tg-eiot">Title    </th>
+                <th class="tg-eiot">Value        &nbsp;&nbsp;&nbsp;&nbsp;              </th>
               </tr>
-              <tr style="text-align: center;">
-                <td style="display: flex;">
-                  subscription ID 
-                </td>
-                <td>
-                  {{subscription_id}}
-                </td>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tg-0tde">Billing Reason</td>
+                <td class="tg-0tde">{{ billing_reason }}</td>
               </tr>
-              <tr style="text-align: center;">
-                <td style="display: flex;">
-                  invoice ID 
-                </td>
-                <td>
-                  {{invoice_id}}
-                </td>
+              <tr>
+                <td class="tg-0tde">Email</td>
+                <td class="tg-0tde">{{ email }}</td>
               </tr>
-              <tr style="text-align: center;">
-                <td style="display: flex;">
-                  Billing Reason 
-                </td>
-                <td>
-                  {{billing_reason}}
-                </td>
+              <tr>
+                <td class="tg-0tde">Amount Paid<br></td>
+                <td class="tg-0tde">$ {{ amount_paid }}</td>
               </tr>
-              <tr style="text-align: center;">
-                <td style="display: flex;">
-                  Email Address 
-                </td>
-                <td>
-                  {{email}}
-                </td>
+              <tr>
+                <td class="tg-0tde">Discount Applied</td>
+                <td class="tg-0tde">$ {{ total_discount_in_cents }}</td>
               </tr>
-              <tr style="text-align: center;">
-                <td style="display: flex;">
-                  Amount Paid in Cents 
-                </td>
-                <td>
-                  {{amount_paid}}
-                </td>
+              <tr>
+                <td class="tg-0tde">UID</td>
+                <td class="tg-0tde">{{ user_id  }}</td>
               </tr>
-              <tr style="text-align: center;">
-                <td style="display: flex;">
-                  Discount Applied in cents
-                </td>
-                <td>
-                  {{total_discount_in_cents}}
-                </td>
+              <tr>
+                <td class="tg-0tde">SID</td>
+                <td class="tg-0tde">{{ subscription_id }}</td>
               </tr>
-          </table>
+              <tr>
+                <td class="tg-0tde">IID</td>
+                <td class="tg-0tde">{{ invoice_id }}</td>
+              </tr>
+            </tbody>
+            </table>
 
           </span></div>
 <!-- <div style="font-family: inherit"><span style="box-sizing: border-box; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; font-size: 14px; vertical-align: baseline; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-top-style: initial; border-right-style: initial; border-bottom-style: initial; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: initial; border-left-color: initial; border-image-source: initial; border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: left; float: none; display: inline; color: #7c7474">Receive an <strong>exclusive 25% discount code</strong> by booking a demo with us in the next 3 days.</span><span style="color: #a19f9f"> &nbsp;</span></div><div></div></div></td> -->
